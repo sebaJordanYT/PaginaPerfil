@@ -1,0 +1,153 @@
+body {
+    font-family: roboto;
+    font-size: 125%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+header {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s; /* Agrega un cambio de color al pasar mouse */
+    padding: 10px 15px; /* espacio extra para mejorar la experiencia de lo de arriba*/
+}
+
+nav a:hover {
+    color: #ccc; /* Para que el menu se sombree con el mouse */
+    background-color: #555;
+}
+
+main { /*podria agregar un main que agarre todo lo de despues del encabezado para que quede tipo periodico*/
+    padding: 20px;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.imagen-ajustada {
+    width: 300px;
+    height: auto;
+}
+
+.imagen-ajustada1 {
+    width: 200px;
+    height: auto;
+}
+
+.imagen-fade { /*clase para efecto fade */
+    width: 300px;
+    height: 200px;
+    /*background-color: #ddd; un color de fondo temporal*/
+    margin-bottom: 20px;
+    opacity: 0; /* establece la opacidad inicial en 0 */
+    transition: opacity 0.8s; /* transición de opacidad */
+    padding-left: 25%;
+}
+
+.imagen-slide-fade-right {
+    width: 300px; /*Tamaño del contenedor*/
+    height: 200px;
+    /*background-color: #ddd; Color de fondo temporal para el fade */
+    overflow: hidden; /* Asegura que el contenido no se desborde del contenedor */
+    opacity: 0; /* Establece la opacidad inicial en 0 para el efecto fade */
+    transition: opacity 0.8s, transform 0.8s; /* Agrega una transición de opacidad y transformación */
+}
+
+.imagen-slide-fade-left {
+    width: 300px; /*Tamaño del contenedor*/
+    height: 200px;
+    /*background-color: #ddd; Color de fondo temporal para el fade */
+    overflow: hidden; /* Asegura que el contenido no se desborde del contenedor */
+    opacity: 0; /* Establece la opacidad inicial en 0 para el efecto fade */
+    transition: opacity 0.8s, transform 0.8s; /* Agrega una transición de opacidad y transformación */
+}
+
+.derecha { /*para alinear texto a la derecha */
+    text-align: center;
+    padding-left: 50%;
+    height: 45vh;
+}
+
+.izquierda { /*para alinear texto a la izquierda */
+    text-align: center;
+    padding-right: 50%;
+    height: 40vh; /*si disminuyo esto puedo hacer que los div queden uno al lado del otro*/
+    padding-top: 25px;
+}
+
+.fondoLiso {
+    background-color: #bab7b1;
+}
+
+.horizontal{
+    padding-top: 75px;
+    display: flex;
+    flex-direction: row; /* Organiza los elementos en una fila */
+    padding-right: 200px;
+    padding-bottom: 100px;
+    padding-left: 75px;
+    background-color: #bab7b1;
+    color: white;
+    line-height: 40px;
+}
+
+.centro { /*para alinear texto al centro */
+    margin: 0 auto; /* Centra el contenido del div horizontalmente */
+    max-width: 600px; /* O ajusta el ancho máximo según tus necesidades */
+    text-align: center;
+    background-color: #bab7b1;
+}
+
+.centro-ancho { /*para alinear texto al centro */
+    margin: 0 auto; /* Centra el contenido del div horizontalmente */
+    max-width: 1000px; /* O ajusta el ancho máximo según tus necesidades */
+    text-align: center;
+    font-size: 100%;
+}
+
+#banner {
+    background-image: url('fondoMinimalista2.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Cubrir todo el tamaño del contenedor */
+    background-position: center; /* Centrar la imagen */
+    height: 80vh; /* 100% de la altura de la ventana gráfica (viewport) */
+    display: flex;
+    flex-direction: column; /* Sirve por si quiero agregar más texto al banner */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+    color: white; /* Color del texto en el banner */
+    font-size: 300%; /* Tamaño del texto */
+    font-family: roboto;
+}
+
+#banner h1, #banner h3 {
+    margin: 0; /* Elimina el margen predeterminado que podría tener h1 y h3 */
+}
