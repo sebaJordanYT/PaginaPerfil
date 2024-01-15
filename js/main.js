@@ -65,7 +65,20 @@ function fadeInSlideOnScrollLeft() { //Función para efecto fade con desplazamie
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    fadeInOnScroll();//Llama funcion de fade sroll cuando contenido de la página está cargado
+    
+    //Esto es para que las imagenes tengan efectos de scroll
+    fadeInOnScroll();
     fadeInSlideOnScrollRight();
     fadeInSlideOnScrollLeft();
+
+
+    //Esto es para que el menu se despliegue en pantallas chicas 
+    var menuIcon = document.getElementById('menu-icon');
+    var menu = document.querySelector('.menu');
+    menuIcon.addEventListener('click', function () {
+        menu.classList.toggle('active');
+    });
+
 });
+
+

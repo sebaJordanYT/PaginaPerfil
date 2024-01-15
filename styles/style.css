@@ -11,7 +11,7 @@ header {
     background-color: white;
     color: black;
     text-align: center;
-    padding: 1em;
+    padding: 2%;
 }
 
 nav ul {
@@ -23,7 +23,7 @@ nav ul {
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 0 1%;
 }
 
 nav a {
@@ -31,7 +31,7 @@ nav a {
     color: black;
     font-weight: bold;
     transition: color 0.3s, background-color 0.3s; /* Agrega un cambio de color al pasar mouse */
-    padding: 10px 15px; /* espacio extra para mejorar la experiencia de lo de arriba*/
+    padding: 1em 1.5em; /* espacio extra para mejorar la experiencia de lo de arriba, em es relativo al tamaño del contenedor*/
 }
 
 nav a:hover {
@@ -150,4 +150,39 @@ footer {
 
 #banner h1, #banner h3 {
     margin: 0; /* Elimina el margen predeterminado que podría tener h1 y h3 */
+}
+
+
+
+/*Acá abajo pondremos los media queries para adaptabilidad a pantallas pequeñas*/
+
+@media screen and (max-width: 600px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    #menu-icon {
+        display: block;
+        text-align: center;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (min-width: 601px) {
+    #menu-icon {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
 }
