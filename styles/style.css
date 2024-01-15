@@ -144,7 +144,7 @@ footer {
     justify-content: center; /* Centrar el contenido horizontalmente */
     align-items: center; /* Centrar el contenido verticalmente */
     color: white; /* Color del texto en el banner */
-    font-size: 300%; /* Tamaño del texto */
+    font-size: 5vw; /* Tamaño del texto */
     font-family: roboto;
 }
 
