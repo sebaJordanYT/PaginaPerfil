@@ -106,6 +106,10 @@ footer {
 
 .fondoLiso {
     background-color: #bab7b1;
+    /*Estas cosas de abajo son para pantallas pequeñas*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .horizontal{
@@ -156,6 +160,9 @@ footer {
 
 /*Acá abajo pondremos los media queries para adaptabilidad a pantallas pequeñas*/
 
+
+
+/*Esto es para el menu*/
 @media screen and (max-width: 600px) {
     .menu {
         display: none;
@@ -175,7 +182,7 @@ footer {
     }
 }
 
-
+/*Esto es para el boton del menu*/
 @media screen and (min-width: 601px) {
     #menu-icon {
         display: none;
@@ -184,5 +191,19 @@ footer {
     .menu {
         display: flex;
         justify-content: center;
+    }
+}
+
+/*Esto es para el banner*/
+@media screen and (max-width: 768px) {
+    .derecha, .izquierda {
+        padding: 10px; /* Reduce el espacio entre bloques en pantallas más pequeñas */
+        height: 70vh;
+        width: 100%;
+    }
+
+    .imagen-slide-fade-right, .imagen-slide-fade-left {
+        width: 100%; /* Haz que ocupen el 100% del ancho en pantallas pequeñas */
+        padding: 0; /* Elimina cualquier padding en pantallas pequeñas */
     }
 }

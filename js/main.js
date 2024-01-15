@@ -32,10 +32,22 @@ function fadeInSlideOnScrollRight() { //Función para efecto fade con desplazami
         elementsToShow.forEach(function (element) {
             if (isElementInViewport(element)) {
                 element.style.opacity = "1";
-                element.style.transform = "translateX(75%)";
+
+                //Lo hago responsive
+                if (window.innerWidth > 768) {
+                    element.style.transform = "translateX(75%)";
+                } else {
+                    element.style.transform = "translateX(0)"; //AJUSTAR PARA QUE SE MUEVA EN CELULARES
+                }
             } else {
                 element.style.opacity = "0";
-                element.style.transform = "translateX(150%)";
+                
+                //Lo hago responsive
+                if (window.innerWidth > 768) {
+                    element.style.transform = "translateX(150%)";
+                } else {
+                    element.style.transform = "translateX(0)"; //AJUSTAR PARA QUE SE MUEVA EN CELULARES
+                }
             }
         });
     }
@@ -51,10 +63,22 @@ function fadeInSlideOnScrollLeft() { //Función para efecto fade con desplazamie
         elementsToShow.forEach(function (element) {
             if (isElementInViewport(element)) {
                 element.style.opacity = "1";
-                element.style.transform = "translateX(75%)";
+
+                //Lo hago responsive
+                if (window.innerWidth > 768) {
+                    element.style.transform = "translateX(75%)";
+                } else {
+                    element.style.transform = "translateX(0)";//AJUSTAR PARA QUE SE MUEVA EN CELULARES
+                }
             } else {
                 element.style.opacity = "0";
-                element.style.transform = "translateX(0%)";
+                
+                //Lo hago responsive
+                if (window.innerWidth > 768) {
+                    element.style.transform = "translateX(0)";
+                } else {
+                    element.style.transform = "translateX(0)";//AJUSTAR PARA QUE SE MUEVA EN CELULARES
+                }
             }
         });
     }
@@ -80,5 +104,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 });
-
-
