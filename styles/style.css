@@ -138,6 +138,14 @@ footer {
     font-size: 100%;
 }
 
+.izquierda-simple {
+    padding-right: 30%;
+    padding-left: 15%;
+    padding-top: 25px;  
+    line-height: 4vh;
+    height: 70vh;
+}
+
 #banner {
     background-image: url('../images/fondoMinimalista2.jpg'); /* Ruta de la imagen de fondo */
     background-size: cover; /* Cubrir todo el tamaño del contenedor */
@@ -220,5 +228,13 @@ footer {
     .imagen-fade{
         width: 100%;
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .izquierda-simple{
+        padding: 5vh;
+        height: 70vh;
+        width: 100%;
     }
 }
