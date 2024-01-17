@@ -136,6 +136,18 @@ footer {
     line-height: 6vh;
 }
 
+.horizontal-columna-largo{
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    background-color: #bab7b1;
+    color: white;
+    line-height: 6vh;
+}
+
 .centro { /*para alinear texto al centro */
     margin: 0 auto; /* Centra el contenido del div horizontalmente */
     max-width: 600px; /* O ajusta el ancho máximo según tus necesidades */
