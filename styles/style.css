@@ -204,6 +204,7 @@ footer {
 
     .menu.active {
         display: flex;
+        animation: slideIn 0.5s ease; /*Animacion de despliegue*/
     }
 
     .menu-icon {
@@ -216,6 +217,19 @@ footer {
     nav li {
         margin: 0 1%;
         margin-bottom: 10px;
+    }
+
+    .menu.active nav li {
+        opacity: 1;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateY(-75px); /* Inicia desde arriba para dar un efecto de despliegue */
+        }
+        to {
+            transform: translateY(0);
+        }
     }
 }
 
