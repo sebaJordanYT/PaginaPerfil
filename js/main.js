@@ -96,11 +96,13 @@ document.addEventListener("DOMContentLoaded", function() {
     fadeInSlideOnScrollLeft();
 
 
-    //Esto es para que el menu se despliegue en pantallas chicas 
-    var menuIcon = document.getElementById('menu-icon');
+    // Esto es para que el menú se despliegue en pantallas pequeñas
+    var menuIcons = document.querySelectorAll('.menu-icon');
     var menu = document.querySelector('.menu');
-    menuIcon.addEventListener('click', function () {
-        menu.classList.toggle('active');
-    });
 
+    menuIcons.forEach(function (menuIcon) {
+        menuIcon.addEventListener('click', function () {
+            menu.classList.toggle('active');
+        });
+    });
 });
