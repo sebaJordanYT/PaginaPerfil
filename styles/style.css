@@ -210,17 +210,20 @@ footer {
     .menu-icon {
         display: block;
         text-align: center;
-        font-size: 1.5em;
-        cursor: pointer;
+        font-size: 4vh;
     }
 
     nav li {
         margin: 0 1%;
-        margin-bottom: 10px;
+        margin-bottom: 1vh;
     }
 
     .menu.active nav li {
         opacity: 1;
+    }
+
+    nav a:active {
+        padding: 1vh; /* Ajusta el padding solo cuando está en el estado :active */
     }
 
     @keyframes slideIn {
