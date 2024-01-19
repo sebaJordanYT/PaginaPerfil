@@ -212,6 +212,11 @@ footer {
         font-size: 1.5em;
         cursor: pointer;
     }
+
+    nav li {
+        margin: 0 1%;
+        margin-bottom: 10px;
+    }
 }
 
 /*Esto es para el boton del menu*/
