@@ -44,7 +44,7 @@ function fadeInSlideOnScrollRight() { //Función para efecto fade con desplazami
                 
                 //Lo hago responsive
                 if (window.innerWidth > 768) {
-                    element.style.transform = "translateX(100%)";
+                    element.style.transform = "translateX(120%)";
                 } else {
                     element.style.transform = "translateX(0)"; //AJUSTAR PARA QUE SE MUEVA EN CELULARES
                 }
@@ -66,7 +66,7 @@ function fadeInSlideOnScrollLeft() { //Función para efecto fade con desplazamie
 
                 //Lo hago responsive
                 if (window.innerWidth > 768) {
-                    element.style.transform = "translateX(30%)";
+                    element.style.transform = "translateX(75%)";
                 } else {
                     element.style.transform = "translateX(0)";//AJUSTAR PARA QUE SE MUEVA EN CELULARES
                 }
