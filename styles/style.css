@@ -94,6 +94,7 @@ footer {
 .derecha { /*para alinear texto a la derecha */
     text-align: center;
     padding-left: 50%;
+    padding-bottom: 2%;
     height: 45vh;
 }
 
