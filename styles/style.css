@@ -180,7 +180,7 @@ footer {
     justify-content: center; /* Centrar el contenido horizontalmente */
     align-items: center; /* Centrar el contenido verticalmente */
     color: white; /* Color del texto en el banner */
-    font-size: 5vw; /* Tamaño del texto */
+    font-size: 3vw; /* Tamaño del texto */
     font-family: roboto;
 }
 
@@ -188,7 +188,9 @@ footer {
     margin: 0; /* Elimina el margen predeterminado que podría tener h1 y h3 */
 }
 
-
+a {
+    color: blue;
+}
 
 /*Acá abajo pondremos los media queries para adaptabilidad a pantallas pequeñas*/
 
@@ -251,7 +253,7 @@ footer {
 /*Esto es para las imagenes con efecto de movimiento*/
 @media screen and (max-width: 600px) {
     .derecha, .izquierda {
-        padding: 0px; /* Reduce el espacio entre bloques en pantallas más pequeñas */
+        padding: 10px; /* Reduce el espacio entre bloques en pantallas más pequeñas */
         height: 70vh;
         width: 100%;
     }
