@@ -267,6 +267,10 @@ a {
         width: 100%; /* Haz que ocupen el 100% del ancho en pantallas pequeñas */
         padding: 0; /* Elimina cualquier padding en pantallas pequeñas */
     }
+
+    .fondoLiso {
+        padding-bottom: 0%;
+    }
 }
 
 /*Esto es para la imagen centrada con texto*/
