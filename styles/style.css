@@ -266,6 +266,7 @@ a {
     .imagen-slide-fade-right, .imagen-slide-fade-left {
         width: 100%; /* Haz que ocupen el 100% del ancho en pantallas pequeñas */
         padding: 0; /* Elimina cualquier padding en pantallas pequeñas */
+        padding-bottom: 0%;
     }
 
     .fondoLiso {
