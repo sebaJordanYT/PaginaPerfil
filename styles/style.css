@@ -94,7 +94,6 @@ footer {
 .derecha { /*para alinear texto a la derecha */
     text-align: center;
     padding-left: 50%;
-    padding-bottom: 2%;
     height: 45vh;
 }
 
@@ -255,22 +254,13 @@ a {
 @media screen and (max-width: 600px) {
     .derecha, .izquierda {
         padding: 10px; /* Reduce el espacio entre bloques en pantallas más pequeñas */
+        height: 70vh;
         width: 100%;
-    }
-
-    .derecha {
-        padding-bottom: 0%;
-        height: 30vh;
     }
 
     .imagen-slide-fade-right, .imagen-slide-fade-left {
         width: 100%; /* Haz que ocupen el 100% del ancho en pantallas pequeñas */
         padding: 0; /* Elimina cualquier padding en pantallas pequeñas */
-        padding-bottom: 0%;
-    }
-
-    .fondoLiso {
-        padding-bottom: 0%;
     }
 }
 
