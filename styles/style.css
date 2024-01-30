@@ -263,10 +263,8 @@ a {
         width: 100%; /* Haz que ocupen el 100% del ancho en pantallas pequeñas */
         padding: 0; /* Elimina cualquier padding en pantallas pequeñas */
     }
-}
 
-/*Esto es para la imagen centrada con texto*/
-@media screen and (max-width: 600px){
+    /*Esto es para la imagen centrada con texto*/
     .horizontal{
         padding: 10px;
         text-align: center;
@@ -282,14 +280,20 @@ a {
     .fondoLiso {
         height: 140vh;
     }
-}
 
-/*Esto es para parrafos simples centrados en pantalla pequeña*/
-@media screen and (max-width: 600px){
+    /*Esto es para parrafos simples centrados en pantalla pequeña*/
     .izquierda-simple{
         padding: 0vh;
         height: 100vh;
         width: 100%;
         text-align: center;
+    }
+
+    .horizontal-columna {
+        line-height: 5vh;
+    }
+
+    .horizontal-columna-largo {
+        line-height: 5vh;
     }
 }
