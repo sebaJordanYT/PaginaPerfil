@@ -1,10 +1,13 @@
 function isElementInViewport(el) { //Me dice si elemento se esta viendo
     var rect = el.getBoundingClientRect();
+    var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+
     return (
         rect.top >= 0 &&
         rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        rect.bottom <= (windowHeight+100) &&
+        rect.right <= windowWidth
     );
 }
 
