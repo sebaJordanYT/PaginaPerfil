@@ -255,12 +255,12 @@ a {
 @media screen and (max-width: 600px) {
     .derecha, .izquierda {
         padding: 10px; /* Reduce el espacio entre bloques en pantallas más pequeñas */
-        height: 70vh;
         width: 100%;
     }
 
     .derecha {
         padding-bottom: 0%;
+        height: 30vh;
     }
 
     .imagen-slide-fade-right, .imagen-slide-fade-left {
