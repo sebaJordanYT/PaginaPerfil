@@ -4,8 +4,8 @@ function isElementInViewport(el) { //Me dice si elemento se esta viendo
     var windowWidth = window.innerWidth || document.documentElement.clientWidth;
 
     return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
+        rect.top >= -100 &&
+        rect.left >= -100 &&
         rect.bottom <= (windowHeight+100) &&
         rect.right <= windowWidth
     );
